@@ -22,3 +22,7 @@
 .tertiary-color {
     color: #1DD100;
 }
+
+html {
+    scroll-behavior: smooth;
+}
