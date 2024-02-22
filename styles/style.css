@@ -26,3 +26,23 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+/* ======================================== */
+
+/* text-lg font-medium font-inter text-[#03071280] */
+
+.single-ticket-style {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+    font-weight: 400;
+    color:#03071299;
+    font-family: "Inter", sans-serif;
+}
+
+.single-div-style {
+    display: flex;
+    margin-top: 1rem; /* 16px */
+    align-items: center;
+    justify-content: space-between;
+}

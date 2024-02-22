@@ -83,7 +83,8 @@
                             <p class="mt-5 text-xl font-normal font-inter text-white">Yes, you can run unit tests and
                                 view the results directly within the app. The <br> integrated testing features allow for
                                 a streamlined .</p>
-                            <button onclick="document.getElementById('buy-ticket-section').scrollIntoView()" class="btn btn-success mt-7 text-xl font-bold font-raleway px-6 bg-[#1DD100]">Buy
+                            <button onclick="document.getElementById('buy-ticket-section').scrollIntoView()"
+                                class="btn btn-success mt-7 text-xl font-bold font-raleway px-6 bg-[#1DD100]">Buy
                                 Tickets</button>
                         </div>
                     </div>
@@ -281,7 +282,7 @@
                     </div>
                     <!-- Text -->
                     <div class="mt-6 text-center">
-                        <p class="text-4xl font-bold font-raleway primary-color">550 Taka</p>
+                        <p class="text-4xl font-bold font-raleway primary-color"><span id="per-seat-price">550</span> Taka</p>
                         <p class="mt-3 text-2xl text-[#03071299] font-bold font-raleway">Per Seat</p>
                     </div>
                 </div>
@@ -362,18 +363,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">A</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">A1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">A1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">A2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">A2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">A3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">A3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">A4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">A4</button>
                                     </div>
                                 </div>
                             </div>
@@ -384,18 +385,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">B</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">B1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">B1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">B2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">B2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">B3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">B3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">B4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -406,18 +407,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">C</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">C1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">C1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">C2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">C2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">C3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">C3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">C4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">C4</button>
                                     </div>
                                 </div>
                             </div>
@@ -428,18 +429,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">D</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">D1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">D1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">D2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">D2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">D3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">D3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">D4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">D4</button>
                                     </div>
                                 </div>
                             </div>
@@ -450,18 +451,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">E</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">E1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">E1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">E2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">E2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">E3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">E3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">E4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">E4</button>
                                     </div>
                                 </div>
                             </div>
@@ -472,18 +473,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">F</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">F1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">F1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">F2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">F2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">F3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">F3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">F4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">F4</button>
                                     </div>
                                 </div>
                             </div>
@@ -494,18 +495,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">G</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">G1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">G1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">G2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">G2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">G3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">G3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">G4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">G4</button>
                                     </div>
                                 </div>
                             </div>
@@ -516,18 +517,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">H</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">H1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">H1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">H2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">H2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">H3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">H3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">H4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">H4</button>
                                     </div>
                                 </div>
                             </div>
@@ -538,18 +539,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">II</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">I1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">I1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">I2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">I2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">I3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">I3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">I4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">I4</button>
                                     </div>
                                 </div>
                             </div>
@@ -560,18 +561,18 @@
                                         <p class="text-lg font-medium font-inter text-[#03071280]">J</p>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">J1</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">J1</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">J2</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">J2</button>
                                     </div>
                                 </div>
                                 <div class="flex gap-8">
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">J3</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">J3</button>
                                     </div>
                                     <div><button
-                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280]">J4</button>
+                                            class="btn w-36 text-lg font-medium font-inter text-[#03071280] single-ticket">J4</button>
                                     </div>
                                 </div>
                             </div>
@@ -609,29 +610,12 @@
                         <!-- Vertical line -->
                         <div class="mt-4 border-y border-[#0307124d] border-dashed border-[1.5px]"></div>
                         <!-- Second Line : Selected Seats -->
-                        <div class="flex items-center justify-between mt-4">
-                            <div>
-                                <p class="text-base font-normal font-inter text-[#03071299]">
-                                <p>C2</p>
-                            </div>
-                            <div>
+                        <div id="selected-ticket-id">
+                            <!-- <div class="flex items-center justify-between mt-4">
+                                <p class="text-base font-normal font-inter text-[#03071299]">C2</p>
                                 <p class="text-base font-normal font-inter text-[#03071299]">Economy</p>
-                            </div>
-                            <div>
                                 <p class="text-base font-normal font-inter text-[#03071299]">550</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between mt-4">
-                            <div>
-                                <p class="text-base font-normal font-inter text-[#03071299]">
-                                <p>C2</p>
-                            </div>
-                            <div>
-                                <p class="text-base font-normal font-inter text-[#03071299]">Economy</p>
-                            </div>
-                            <div>
-                                <p class="text-base font-normal font-inter text-[#03071299]">550</p>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Vertical line -->
                         <div class="mt-4 border-y border-[#0307124d] border-[1.5px]"></div>
@@ -641,7 +625,7 @@
                                 <p class="text-base font-medium font-inter primary-color">Total Price</p>
                             </div>
                             <div>
-                                <p class="text-base font-medium font-inter primary-color">BDT 1100</p>
+                                <p class="text-base font-medium font-inter primary-color">BDT <span id="total-cost">00</span></p>
                             </div>
                         </div>
 
@@ -794,6 +778,9 @@
             </div>
         </section>
     </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
