@@ -46,3 +46,9 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }

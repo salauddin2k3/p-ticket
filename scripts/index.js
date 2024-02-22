@@ -32,7 +32,6 @@ for (const ticket of allTickets) {
         console.log(perSeatPrice);
 
 
-
         // Up to 4 seat selected function
 
         if (getConvertedValue("seat-count") + 1 > 4) {
@@ -108,7 +107,7 @@ for (const ticket of allTickets) {
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
 
-    if (status == undefined){
+    if (status == undefined) {
         document.getElementById("grand-total").innerText = totalCost;
     }
     else {
@@ -123,7 +122,7 @@ function updateGrandTotal(status) {
             document.getElementById("grand-total").innerText = totalCost - discountedTwo;
         }
         else {
-            alert ("Please enter a valid coupon code");
+            alert("Please enter a valid coupon code");
         }
     }
     document.getElementById("coupon-code").value = "";
@@ -146,4 +145,26 @@ function getConvertedValue(id) {
     const convertPrice = parseInt(price);
     return convertPrice;
 }
+
+
+
+// Disabled next btn
+
+document.addEventListener('DOMContentLoaded', function () {
+    const inputField = document.getElementById('inputField');
+    const submitButton = document.getElementById('submitButton');
+
+    inputField.addEventListener('input', function () {
+        if (inputField.value.trim() !== '') {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    });
+});
+
+
+
+
+
 
