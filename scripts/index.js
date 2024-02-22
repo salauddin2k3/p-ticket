@@ -31,6 +31,37 @@ for (const ticket of allTickets) {
         const perSeatPrice = document.getElementById("per-seat-price").innerText;
         console.log(perSeatPrice);
 
+
+        // Up to 4 seat selected function
+
+        if (getConvertedValue("seat-count") + 1 > 4) {
+            alert("You can select up to four seat");
+            return;
+        }
+
+        // If selected seat over 40
+
+        if (getConvertedValue("seat-left") - 1 < 0) {
+            alert("All seat Selected");
+            return;
+        }
+
+
+        // Cart or Seat Count
+
+        const cartCount = getConvertedValue("seat-count");
+        document.getElementById("seat-count").innerText = cartCount + 1;
+
+
+
+        // Seat Left
+
+        const seatLeft = getConvertedValue("seat-left");
+        document.getElementById("seat-left").innerText = seatLeft - 1;
+
+
+
+
         const div = document.createElement("div");
         // div style..............
         div.classList.add("single-div-style");
@@ -88,6 +119,7 @@ function updateGrandTotal(status) {
             alert ("Please enter a valid coupon code");
         }
     }
+    document.getElementById("coupon-code").value = "";
 }
 
 
