@@ -32,12 +32,19 @@ for (const ticket of allTickets) {
         console.log(perSeatPrice);
 
 
+
         // Up to 4 seat selected function
 
         if (getConvertedValue("seat-count") + 1 > 4) {
-            alert("You can select up to four seat");
+            alert("You can't select up to four seat");
             return;
         }
+
+        // one click per seat & disabled
+
+        event.target.setAttribute("disabled", false);
+        event.target.style.backgroundColor = "#1DD100";
+        event.target.style.color = "white";
 
         // If selected seat over 40
 
