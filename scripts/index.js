@@ -29,7 +29,6 @@ for (const ticket of allTickets) {
         const selectedContainer = document.getElementById("selected-ticket-id");
 
         const perSeatPrice = document.getElementById("per-seat-price").innerText;
-        console.log(perSeatPrice);
 
 
         // Up to 4 seat selected function
