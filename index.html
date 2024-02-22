@@ -632,8 +632,8 @@
                         <!-- Input -->
                         <div class="mt-4">
                             <label class="input flex items-center gap-2">
-                                <input type="text" class="grow" placeholder="Have any coupon?" />
-                                <button
+                                <input id="coupon-code" type="text" class="grow" placeholder="Have any coupon?" />
+                                <button onclick="updateGrandTotal('apply-btn')"
                                     class="btn btn-sm w-20 h-9 text-base font-semibold font-inter text-white bg-[#1DD100] ">Apply</button>
                             </label>
                         </div>
@@ -643,7 +643,7 @@
                                 <p class="text-base font-medium font-inter primary-color">Grand Total</p>
                             </div>
                             <div>
-                                <p class="text-base font-medium font-inter primary-color">BDT 1100</p>
+                                <p class="text-base font-medium font-inter primary-color">BDT <span id="grand-total">00</span></p>
                             </div>
                         </div>
                     </div>

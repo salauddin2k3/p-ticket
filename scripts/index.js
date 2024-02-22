@@ -22,8 +22,8 @@
 
 const allTickets = document.getElementsByClassName("single-ticket");
 
-for (const ticket of allTickets){
-    ticket.addEventListener('click', function(event){
+for (const ticket of allTickets) {
+    ticket.addEventListener('click', function (event) {
         const ticketName = event.target.innerText;
 
         const selectedContainer = document.getElementById("selected-ticket-id");
@@ -38,7 +38,7 @@ for (const ticket of allTickets){
         const p1 = document.createElement("p");
         // p1 style.....
         p1.classList.add("single-ticket-style");
-        
+
         const p2 = document.createElement("p");
         // p2 style.....
         p2.classList.add("single-ticket-style");
@@ -57,14 +57,43 @@ for (const ticket of allTickets){
 
         selectedContainer.appendChild(div);
 
+        // Call update total cost
         updateTotalCost(perSeatPrice);
+
+        // Call Grand Total
+        updateGrandTotal()
     })
+}
+
+// Update total Grand Cost Function
+
+function updateGrandTotal(status) {
+    const totalCost = getConvertedValue("total-cost");
+
+    if (status == undefined){
+        document.getElementById("grand-total").innerText = totalCost;
+    }
+    else {
+        const couponCode = document.getElementById("coupon-code").value;
+
+        if (couponCode == "NEW15") {
+            const discountedOne = totalCost * 0.15;
+            document.getElementById("grand-total").innerText = totalCost - discountedOne;
+        }
+        else if (couponCode == "Couple 20") {
+            const discountedTwo = totalCost * 0.2;
+            document.getElementById("grand-total").innerText = totalCost - discountedTwo;
+        }
+        else {
+            alert ("Please enter a valid coupon code");
+        }
+    }
 }
 
 
 // Create function for added total cost value
 
-function updateTotalCost (value) {
+function updateTotalCost(value) {
     const totalCost = getConvertedValue("total-cost");
     const sum = totalCost + parseInt(value);
     document.getElementById("total-cost").innerText = sum;
@@ -73,8 +102,9 @@ function updateTotalCost (value) {
 
 // Any string convert to number using function
 
-function getConvertedValue (id) {
+function getConvertedValue(id) {
     const price = document.getElementById(id).innerText;
     const convertPrice = parseInt(price);
     return convertPrice;
 }
+
