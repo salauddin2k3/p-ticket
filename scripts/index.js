@@ -35,7 +35,7 @@ for (const ticket of allTickets) {
         // Up to 4 seat selected function
 
         if (getConvertedValue("seat-count") + 1 > 4) {
-            alert("You can't select up to four seat");
+            alert("You can't select more than four seats");
             return;
         }
 
@@ -106,6 +106,7 @@ for (const ticket of allTickets) {
 
 function updateGrandTotal(status) {
     const totalCost = getConvertedValue("total-cost");
+    const hideDiv = document.getElementById("hide-div");
 
     if (status == undefined) {
         document.getElementById("grand-total").innerText = totalCost;
@@ -116,16 +117,19 @@ function updateGrandTotal(status) {
         if (couponCode == "NEW15") {
             const discountedOne = totalCost * 0.15;
             document.getElementById("grand-total").innerText = totalCost - discountedOne;
+            hideDiv.style.display = 'none';
         }
         else if (couponCode == "Couple 20") {
             const discountedTwo = totalCost * 0.2;
             document.getElementById("grand-total").innerText = totalCost - discountedTwo;
+            hideDiv.style.display = 'none';
         }
         else {
             alert("Please enter a valid coupon code");
         }
     }
     document.getElementById("coupon-code").value = "";
+
 }
 
 
